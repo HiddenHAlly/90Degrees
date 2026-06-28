@@ -4,8 +4,13 @@
   "version": "${version}",
   "name": "90Degrees",
   "description": "",
-  "authors": [],
-  "contact": {},
+  "authors": [
+    "HiddenHAlly"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/HiddenHAlly/90Degrees"
+  },
   "license": "MIT",
   "icon": "assets/ninetydegrees/icon.png",
   "environment": "client",
