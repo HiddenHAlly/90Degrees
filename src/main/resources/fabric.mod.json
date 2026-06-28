@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "ninetydegrees",
+  "version": "${version}",
+  "name": "90Degrees",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/ninetydegrees/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "fabric-datagen": [
+      "net.hiddenhally.ninetydegrees.NinetyDegreesModDataGenerator"
+    ],
+    "client": [
+      "net.hiddenhally.ninetydegrees.NinetyDegreesModClient"
+    ],
+    "main": [
+      "net.hiddenhally.ninetydegrees.NinetyDegreesMod"
+    ],
+    "modmenu": [
+      "net.hiddenhally.ninetydegrees.compat.ModMenuIntegration"
+    ]
+  },
+  "mixins": [
+    "ninetydegrees.mixins.json",
+    {
+      "config": "ninetydegrees.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.2",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
